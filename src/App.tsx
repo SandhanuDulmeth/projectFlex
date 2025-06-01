@@ -1,18 +1,26 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import ItemGrid from './components/ItemGrid';
 import Footer from './components/Footer';
+import About from './components/About';
+import ItemGrid from './components/ItemGrid';
 import { shopItems } from './data/items';
 
 function App() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
-      <Header />
-      <main className="flex-grow">
-        <ItemGrid items={shopItems} />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-white flex flex-col">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<ItemGrid items={shopItems} />} />
+            <Route path="/items" element={<ItemGrid items={shopItems} />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
