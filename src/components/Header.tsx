@@ -10,7 +10,7 @@ const Header: React.FC = () => {
           </h1>
           <div className="flex space-x-6">
             <a 
-              href="https://facebook.com" 
+              href="https://www.facebook.com/profile.php?id=61576760342310" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-purple-200 transition-colors duration-300"
