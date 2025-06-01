@@ -3,44 +3,21 @@ import { ShopItem } from '../types';
 export const shopItems: ShopItem[] = [
   {
     id: '1',
-    name: 'Sample Item 1',
-    imageUrl: 'https://scontent.fcmb1-2.fna.fbcdn.net/v/t39.30808-6/502859983_122102291534892011_7669104249442271173_n.jpg',
-    postUrl: 'https://www.facebook.com/permalink.php?story_fbid=pfbid0kU2pv5Lz39TBcmAUZHi6QbRQXjUFcMxUBUAmobyMh6Q3tDCc4Ea2DVp3QKwpCB9bl&id=61576760342310',
-    // whatsAppNumber: '15551234567' // Uncomment and add real number if available
+    iframeUrl: 'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02jgP3zuKvhycHfCN32XDKq6oUJtAHocrSFEqxDvcCKUtgBBvqiHece67vweHBHq8ml%26id%3D61576760342310&show_text=true&width=500',
+    width: 500,
+    height: 674
   },
   {
     id: '2',
-    name: 'Sample Item 2',
-    imageUrl: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    postUrl: 'https://facebook.com',
-    whatsAppNumber: '15551234567'
+    iframeUrl: 'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0P8MVbEw8psycPqjNNYF8jjyxUQ4kJaSkiwvtu7opjTyHCwbVdqbXxSsPjg88MX8Zl%26id%3D61576760342310&show_text=true&width=500',
+    width: 500,
+    height: 674
   },
   {
     id: '3',
-    name: 'Sample Item 3',
-    imageUrl: 'https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    postUrl: 'https://facebook.com',
-    // whatsAppNumber: '15551234567'
-  },
-  {
-    id: '4',
-    name: 'Sample Item 4',
-    imageUrl: 'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    postUrl: 'https://facebook.com',
-    whatsAppNumber: '15551234567'
-  },
-  {
-    id: '5',
-    name: 'Sample Item 5',
-    imageUrl: 'https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    postUrl: 'https://facebook.com',
-    // whatsAppNumber: '15551234567'
-  },
-  {
-    id: '6',
-    name: 'Sample Item 6',
-    imageUrl: 'https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    postUrl: 'https://facebook.com',
-    whatsAppNumber: '15551234567'
+    iframeUrl: 'https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0kU2pv5Lz39TBcmAUZHi6QbRQXjUFcMxUBUAmobyMh6Q3tDCc4Ea2DVp3QKwpCB9bl%26id%3D61576760342310&show_text=true&width=500',
+    width: 500,
+    height: 674
   }
+
 ];

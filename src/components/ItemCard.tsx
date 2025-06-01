@@ -6,30 +6,25 @@ interface ItemCardProps {
 }
 
 const ItemCard: React.FC<ItemCardProps> = ({ item }) => {
-  const handleClick = () => {
-    if (item.whatsAppNumber) {
-      window.open(`https://wa.me/${item.whatsAppNumber}?text=I'm%20interested%20in%20${encodeURIComponent(item.name)}`, '_blank');
-    } else {
-      window.open(item.postUrl, '_blank');
-    }
-  };
-
   return (
-    <div 
-      className="bg-white border border-purple-300 rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:scale-102 cursor-pointer"
-      onClick={handleClick}
-    >
-      <div className="aspect-square overflow-hidden">
-        <img 
-          src={item.imageUrl} 
-          alt={item.name} 
-          className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+    <div className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg hover:scale-[1.02] cursor-pointer w-full">
+      <div className="w-full">
+        <iframe 
+          src={item.iframeUrl}
+          width="100%"
+          height={item.height || 674}
+          style={{ 
+            border: 'none', 
+            overflow: 'hidden',
+            width: '100%',
+            maxWidth: '500px',
+            display: 'block'
+          }}
+          scrolling="no"
+          frameBorder="0"
+          allowFullScreen={true}
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
         />
-      </div>
-      <div className="p-4">
-        <h3 className="text-purple-800 text-xl font-semibold text-center">
-          {item.name}
-        </h3>
       </div>
     </div>
   );

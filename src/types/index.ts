@@ -1,7 +1,7 @@
 export interface ShopItem {
   id: string;
-  name: string;
-  imageUrl: string;
-  postUrl: string;
-  whatsAppNumber?: string;
+  name?: string;
+  iframeUrl: string;
+  width?: number;
+  height?: number;
 }
