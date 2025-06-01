@@ -20,7 +20,7 @@ const Header: React.FC = () => {
               </svg>
             </a>
             <a 
-              href="https://wa.me/15551234567" 
+              href="https://wa.me/94703112876" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-purple-200 transition-colors duration-300 flex items-center"
