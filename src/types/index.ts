@@ -4,4 +4,5 @@ export interface ShopItem {
   iframeUrl: string;
   width?: number;
   height?: number;
+  category: 'homeware' | 'other';
 }
