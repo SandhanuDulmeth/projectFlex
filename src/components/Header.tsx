@@ -15,7 +15,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center justify-between w-full md:w-auto">
           <Link to="/" className="text-4xl md:text-5xl font-bold mb-4 md:mb-0">
-            Flex
+            Flex Home
           </Link>
           <button
             className="md:hidden ml-auto"
@@ -30,6 +30,7 @@ const Header: React.FC = () => {
             ${menuOpen ? 'flex' : 'hidden'} md:flex`}
         >
           <NavLink to="/items" className={navLinkClass}>Items</NavLink>
+          <NavLink to="/promotion" className={navLinkClass}>Promotion</NavLink>
           <NavLink to="/about" className={navLinkClass}>About</NavLink>
         </nav>
         <div className="flex space-x-6 mt-4 md:mt-0">

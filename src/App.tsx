@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import ItemGrid from './components/ItemGrid';
 import { shopItems } from './data/items';
+import Promotion from './components/Promotion';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<ItemGrid items={shopItems} />} />
             <Route path="/items" element={<ItemGrid items={shopItems} />} />
+            <Route path="/promotion" element={<Promotion />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </main>
